@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TourBuddy Landing Website</title>
+</head>
+<body>
+  <div class="tourbuddy-image">
+    <div class="tourbuddy-text">
+      <h1 style="font-size: 75px;">TourBuddy</h1>
+      <h2>It´s a big world. Let´s explore it!</h2>
+      <a href="https://www.tourbuddy.dk/" target="_blank">Explore</a>
+    </div>
+  </div>
+
+      <video autoplay  loop id="promotional">
+        <source src="assets/video-tourbuddy.mp4" type="video/mp4">
+      </video>
+        <div class="video">
+        <button id="pbtn" onclick="myFunction()">II</button>
+      </div>
+    
+    <h2>Our Commitment</h2>
+
+
+    <div class="commitment">
+      <div class="gallery">
+        <a target="_blank" href="assets/sustainable.png">
+          <img src="assets/sustainable.png" alt="Responsible Travel">
+        </a>
+        <h3>Responsible Travel</h3>
+        <div class="desc">TourBuddy promotes responsible travel experience for our tourists and
+          advocate sustainable tourism in the Philippines, to secure the viability of our key partners,
+          local communities, tourists.</div>
+      </div>
+    </div>
+    
+    
+    <div class="commitment">
+      <div class="gallery">
+        <a target="_blank" href="assets/locals.png">
+          <img src="assets/locals.png" alt="Collaborating with the locals">
+        </a>
+        <h3>Collaborating with the locals</h3>
+        <div class="desc">TourBuddy is committed in promoting social empowerment through collaboration
+          with small local social entrepreneurs and artisan throught promoting their local
+          products.</div>
+      </div>
+    </div>
+    
+    <div class="commitment">
+      <div class="gallery">
+        <a target="_blank" href="assets/xtraordinary.png">
+          <img src="assets/xtraordinary.png" alt="Exctraordinary travel experience">
+        </a>
+        <h3>Extraordinary Travel Destination</h3>
+        <div class="desc">TourBuddy specializes in all-inclusive tours and authentic
+          and off-the-beaten-path destinations, each having
+          premium offerings in accommodations, gastronomy and activities.</div>
+      </div>
+    </div>
+    
+    <div class="commitment">
+      <div class="gallery">
+        <a target="_blank" href="assets/momentss.png">
+          <img src="assets/momentss.png" alt="Capturing moments">
+        </a>
+        <h3>Capturing Moments. Creating Memories.</h3>
+        <div class="desc">TourBuddy Team are professional photographer and content creators.
+          We take photos and make videos during the trip while our clients are busy making memories. </div>
+      </div>
+    </div>
+
+
+
+<!-- Contact Form -->
+
+<div class="container">
+  <h3>Get In Touch Today!</h3>
+  <p>Fill out this form and we will be in touch ASAP!</p>
+  <form name="tourbuddyform" method="POST" data-netlify="true">
+    <div class="row">
+    <div class="col-label">
+        <label for="fname">Name *</label>
+      </div>
+      <div class="col-input">
+        <input type="text" id="name" name="name" placeholder="Your name..">
+      </div>
+    </div> 
+    
+    <div class="row">
+      <div class="col-label">
+        <label for="email">Email *</label>
+      </div>
+      <div class="col-input">
+        <input type="text" id="email" name="email" placeholder="Your email..">
+      </div>
+    </div>
+    
+     <div class="row">
+      <div class="col-label">
+        <label for="phone">Phone (optional)</label>
+      </div>
+      <div class="col-input">
+        <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-label">
+        <label for="adults">Number of Adults*</label>
+      </div>
+      <div class="col-input">
+        <input type="number" id="adults" name="adults"
+       min="1" max="100">
+      </div>
+    </div>
+    
+     <div class="row">
+      <div class="col-label">
+        <label for="subject">Subject (optional)</label>
+      </div>
+      <div class="col-input">
+        <select id="subject" name="subject">
+         <option value=""></option>
+          <option value="enquiry">Tour Package Enquiry</option>
+          <option value="booking">Booking issue</option>
+          <option value="billing">Billing issue</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+    </div>   
+    
+    <div class="row">
+      <div class="col-label">
+        <label for="subject">Message</label>
+      </div>
+      <div class="col-input">
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+<div id="map"></div>
+</body>
+
+<div id="map"></div>
+
+<script>
+    function initMap() {
+    var location = {lat: 55.229851, lng: 11.760600};
+    var map = new google.maps.Map (document.getElementById("map"), {
+        zoom: 4,
+        center: location
+});
+
+    var maker = new google.maps.Marker({
+        position: location,
+        map:map
+    });
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/
+js?key=AIzaSyDSOmndU0L5GTHelOFUYoQpf2gGNygyvV4&callback=initMap"></script>
+
+<script src="script.js"></script>
+
+
+</html>

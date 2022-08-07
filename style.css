@@ -1,0 +1,251 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.tourbuddy-image { 
+  background-image: url("assets/bakground.png");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.tourbuddy-text {
+  font-size: 28px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  
+}
+
+.tourbuddy-text a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 20px 90px;
+  color: white;
+  background-color: #09a5ac;
+  text-align: center;
+  cursor: pointer;
+  font-size: large;
+  text-decoration: none;
+}
+
+.tourbuddy-text a:hover {
+  background-color: #078d94;
+  color: white;
+}
+
+  /* Our Commitment */
+  div.gallery {
+    border: 1px solid #ccc;
+    margin-top: 32px;
+  }
+  
+  div.gallery:hover {
+    border: 2px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  p {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  h2
+  {
+  margin-top: 25px;
+   padding: 25px;
+   text-align: center;
+
+ }
+
+  h3 
+   {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .video {
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #pbtn:hover {
+    background: #ddd;
+    color: black;  
+  }
+
+  #pbtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+ 
+  * {
+    box-sizing: border-box;
+  } 
+  
+  .commitment {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+/* About TravelBuddy */
+.about {
+  padding-top: 10px;
+  color: #09A5AC;
+}
+
+/* About Description */
+.about-desc {
+  padding-top: 20px;
+  color: #383838;
+} 
+  
+/* video section styles on index page */
+#video {
+  margin-bottom: -5px;
+}
+#video-tb {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  #video {
+    margin-top: 1rem;
+  }
+}
+
+
+/* video */
+#video {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F2F2F2;
+} 
+
+#promotional {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+} 
+ /* Contact Form */
+  * {
+  box-sizing: border-box;
+  }  
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+  resize: vertical;
+ 
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #09a5ac;
+  color: white;
+  padding: 15px 45px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-size: large;
+}
+
+input[type=submit]:hover {
+  background-color: #078d94;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin-top: 30%;
+
+}
+ 
+.col-label {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-input {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*  map */
+*  {
+  margin: 0;
+  padding: 0;
+  } 
+  
+#map  {
+  height: 500px;
+  width: 100%;
+  }
+
+/* Contact Form */
+@media screen and (max-width: 600px) {
+  .col-label, .col-input, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+ /* Our Commitment */
+ @media only screen and (max-width: 700px) {
+    .commitment {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+ @media only screen and (max-width: 500px) {
+    .commitment {
+      width: 100%;
+    }
+  } 
+  
